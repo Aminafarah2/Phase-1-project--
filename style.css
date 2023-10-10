@@ -1,5 +1,21 @@
-#container img{
+/* styling the body */
+body{
+background-color : #CCD0CF;
+display: flex;
+justify-content : center;
+
+
+
+}
+#cointainer{
+    width: 50%;
+    height:680px;
+    background-color: #11212D;
+}
+
+#image{
     width: 100%;
-    height: 67%;
-    border: 5px solid ;
+    height: 500px;
+    border: 5px solid #0F969C ;
+    box-sizing: border-box;
 }
