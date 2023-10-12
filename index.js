@@ -18,15 +18,3 @@ function fetchRandomDogImage() {
         });
 }
 fetchRandomDogImage();
-// Event listeners
-fetchButton.addEventListener("click", fetchRandomDogImage);
-
-dogImage.addEventListener("load", () => {
-    // Adjust the container's size when the image loads
-    document.getElementById("container").style.width = dogImage.width + "px";
-    document.getElementById("container").style.height = dogImage.height + "px";
-});
-
-dogImage.addEventListener("error", () => {
-    alert("Failed to load dog image.");
-});
