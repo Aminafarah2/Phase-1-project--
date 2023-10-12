@@ -29,3 +29,8 @@ dogImage.addEventListener("load", () => {
     document.getElementById("container").style.width = dogImage.width + "px";
     document.getElementById("container").style.height = dogImage.height + "px";
 });
+// load error when the page doesnt load as an event listener 
+dogImage.addEventListener("error", () => {
+    alert("Failed to load dog image.");
+});
+
