@@ -1,6 +1,8 @@
 const dogImage = document.getElementById("dogImage");
 const fetchButton = document.getElementById("btn");
 
+
+
 // Function to fetch a random dog image
 function fetchRandomDogImage() {
     fetch("https://dog.ceo/api/breeds/image/random")
@@ -17,6 +19,8 @@ function fetchRandomDogImage() {
             console.error("Error fetching dog image:", error);
         });
 }
+
+
 fetchRandomDogImage();
 
 // Event listeners
@@ -30,6 +34,8 @@ dogImage.addEventListener("load", () => {
     document.getElementById("container").style.height = dogImage.height + "px";
 });
 // load error when the page doesnt load as an event listener 
+
+
 dogImage.addEventListener("error", () => {
     alert("Failed to load dog image.");
 });
