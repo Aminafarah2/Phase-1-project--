@@ -1,5 +1,10 @@
-const dogImage = document.getElementById("dogImage");
+
+document.addEventListener("DOMContentLoaded", () => {
+    const dogImage = document.getElementById("dogImage");
 const fetchButton = document.getElementById("btn");
+
+fetchButton.addEventListener("click", fetchRandomDogImage);
+});
 
 
 
@@ -23,11 +28,11 @@ function fetchRandomDogImage() {
 
 fetchRandomDogImage();
 
+
+
+
+
 // Event listeners
-fetchButton.addEventListener("click", fetchRandomDogImage);
-
-
-
 dogImage.addEventListener("load", () => {
     // Adjust the container's size when the image loads
     document.getElementById("container").style.width = dogImage.width + "px";
